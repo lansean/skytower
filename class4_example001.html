@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Navigation Bar</title>
+
+ <style>
+     @media screen and (min-width:768px) and (max-width:991)
+         <!--[if lt IE 9]>
+         <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></style>script> <![eddif]-->
+    .ul{list-style-type:none;
+     }
+     li{background-color:antiquewhite}
+    .button {
+            background-color: orange;
+            border: none;
+            color: blue;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: overline;
+            display: inline-block;
+            font-size: 16px;
+            cursor: progress;
+        }
+        
+        .button:hover {
+            color: white;
+            background-color: blue;
+        }
+        
+        .bn-dropdown-content {
+            display: none;
+            background-color: greenyellow;
+            width: 130px;
+            padding: 12px 16px;
+            position: absolute;
+            left: 480px;
+        }
+        
+        .button:hover .bn-dropdown-content {
+            display: block;
+        }
+        .coursework {
+            display:absolute;
+        }
+        .homework {
+            display:none;
+        }
+        .coursework:hover {
+            display:block;
+        }
+       .coursework:hover>.homework{
+         display:block;
+     }
+    </style>   
+</head>
+
+<body>
+
+    <h3>Choice 2: button groups.</h3>
+    
+    <button class="button">Button1</button>
+    <button class="button">Button2</button>
+    <button class="button">Button3</button>
+    <a href="http://www.google.com" target="_blank" button class="button">Google</a>
+
+    <button class="button" a href="#">Dropdown
+        <div class="bn-dropdown-content">
+            <ul>
+                <li><a href="#">Link 1</a>
+                <div class="coursework"> 
+                    <ul class="homework">
+                        <li><a href="#"></a>Option A</li>
+                        <li><a href="#"></a>Option B</li>
+                        <li><a href="#"></a>Option C</li>
+                    </ul>
+                    
+                </div>   
+                    
+                    </li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </div>
+    </button>
+</body>
+
+</html>
