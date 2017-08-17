@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+      
+       <script src="https://goo.gl/OmE7hm"></script>
+ 
+       <script>
+        function check() {
+        if (reg.myname.value == "") {
+            alert("未輸入姓名");
+        }
+        else reg.submit();
+    }
+    </script>
+    
+</head>
+<body>
+   
+  <h1>表單製作</h1>
+
+    <form method="post" action="form.aspx" name="reg">
+       <fieldset>
+          <p></p> 	
+           <legend>基本資料</legend>
+               姓名:<input type="text" name="myname" placeholder="請輸入姓名" size=40 maxlength=100 value="">
+               <p></p>
+               生日:西元<input type="text" id="Year">年
+               <select name="dropdown" option{value=$12]>
+                   <option value="">Jan</option>
+                   <option value="">Feb</option>
+                   <option value="">Mar</option>
+                   <option value="">Apr</option>
+                   <option value="">May</option>
+                   <option value="">Jun</option>
+                   <option value="">Jul</option>
+                   <option value="">Aug</option>
+                   <option value="">Sep</option>
+                   <option value="">Oct</option>
+                   <option value="">Nov</option>
+                   <option value="">Dec</option>
+               </select>月
+               <select>
+                  <option value="">01</option>
+                  <option value="">02</option>
+                  <option value="">03</option>
+                  <option value="">04</option>
+                  <option value="">05</option>
+                  <option value="">05</option>
+                  <option value="">07</option>
+                  <option value="">08</option>
+                  <option value="">09</option>
+                  <option value="">10</option>
+                  <option value="">11</option>
+                  <option value="">12</option>
+               </select>日
+               <p>
+               電話:<input type="text" id="Phone"><p>
+               男<input type="radio" value="male" name="title">
+               女<input type="radio" value="female" name="title">
+       </fieldset>
+       <p></p>
+       <fieldset>
+      
+           <legend>其他項目</legend>
+               <p>興趣 (複選)</p>
+               <input type="checkbox" name="Reading" value="reading">閱讀
+               <input type="checkbox">運動
+               <input type="checkbox">音樂
+               <input type="checkbox">睡覺
+               <input type="checkbox">聊天<p></p>
+               <p>請選擇你最喜歡的幾門課 (多選)</p>
+               <select name="subjects" id="subjects" multiple="multiple">
+                   <option value="">1.國文</option>
+                   <Option value="">2.數雤</Option>
+                   <option value="">3.英文</option>
+                   <option value="">4.自然</option>
+                   <option value="">5.社會</option>
+                   <option value="">6.其他</option>
+               </select>
+               <p>意見回饋</p>
+               <textarea cols="40" rows="05" id="Remarks"></textarea>
+       </fieldset>
+       <p></p>
+       <input type="submit" onClick="check()"> <input type="reset">
+    </form>
+</body>
+</html>
