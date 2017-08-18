@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <script>
+        function myFunction() {
+       var seat=[0,0,1,1,0,1,0,0,0,1,1,0,0,1];
+       var index=0;
+        
+       while (index<15) {
+                        if (seat[index]==0 && seat[index+1]==0 && seat[index+2]==0){
+                            document.getElementById("seat" + (index+1).toString()).style.color="red";
+                            document.getElementById("seat" + (index+2).toString()).style.color="red";
+                            document.getElementById("seat" + (index+3).toString()).style.color="red";
+                        }
+                        index=index+1
+                        } 
+    
+        }
+    </script>
+    
+    <style>
+        span {border:2px solid black; width: 20px; display: inline-block;}
+    </style>
+</head>
+
+<body>
+    
+    <div>
+       <p></p>
+       <p></p>
+        <span id="seat1">0</span>
+        <span id="seat2">0</span>
+        <span id="seat3">1</span>
+        <span id="seat4">1</span>
+        <span id="seat5">0</span>
+        <span id="seat6">1</span>
+        <span id="seat7">0</span>
+        <span id="seat8">0</span>
+        <span id="seat9">0</span>
+        <span id="seat10">1</span>
+        <span id="seat11">1</span>
+        <span id="seat12">0</span>
+        <span id="seat13">0</span>
+        <span id="seat14">1</span>
+        <span id="seat15">0</span>
+    </div>     
+    <button onclick="myFunction()">Try it</button>
+    
+</body>
+</html>
